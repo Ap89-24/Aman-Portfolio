@@ -129,7 +129,7 @@ export const BackgroundCanvas: React.FC = () => {
   return (
     <>
       <canvas id="bg-canvas" ref={canvasRef} />
-      <div class="bg-noise" />
+      <div className="bg-noise" />
     </>
   );
 };

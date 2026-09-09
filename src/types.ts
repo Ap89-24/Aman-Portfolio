@@ -4,22 +4,31 @@ export interface Project {
   title: string;
   tagline: string;
   description: string;
-  technologies: string[];
+  technology: string[];
+  categoryLabel: string;
   githubUrl: string;
   liveUrl?: string;
-  category: string;
+  architectureDetails: {
+    overview: string;
+    diagram: string;
+    highlights: string[];
+  };
 }
 
 export interface TechCategory {
+  id: string;
   title: string;
-  iconName: string;
+  icon: string;
   items: string[];
-  highlight?: string;
+  accentColor?: string;
 }
 
 export interface MindsetStep {
-  step: string;
-  title: string;
+  id: string;
+  stepNumber: string;
+  shortTitle: string;
+  fullTitle: string;
   description: string;
   artifacts: string;
 }
+

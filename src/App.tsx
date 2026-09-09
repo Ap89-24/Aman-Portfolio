@@ -8,6 +8,7 @@ import { About } from './components/about/About';
 import { TechStack } from './components/stack/TechStack';
 import { HowIBuild } from './components/mindset/HowIBuild';
 import { GithubSection } from './components/github/GithubSection';
+import { ResumeSection } from './components/resume/ResumeSection';
 import { Contact } from './components/contact/Contact';
 import { Footer } from './components/layout/Footer';
 import { CheckCircle2 } from 'lucide-react';
@@ -39,6 +40,7 @@ export const App: React.FC = () => {
         <TechStack />
         <HowIBuild />
         <GithubSection />
+        <ResumeSection />
         <Contact onCopyEmail={handleCopyEmail} />
       </main>
 

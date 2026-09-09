@@ -73,7 +73,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onCopyEmail }) => {
     { num: '03', label: 'Stack', href: '#stack' },
     { num: '04', label: 'How I Build', href: '#mindset' },
     { num: '05', label: 'Contributions', href: '#github' },
-    { num: '06', label: 'Contact', href: '#contact' },
+    { num: '06', label: 'Resume', href: '#resume' },
+    { num: '07', label: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -94,12 +95,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onCopyEmail }) => {
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-8 font-display text-sm text-zinc-400">
+          <nav className="hidden md:flex items-center gap-7 lg:gap-8 font-display text-sm text-zinc-400">
             <a href="#work" className="hover:text-white transition-colors">Work</a>
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#stack" className="hover:text-white transition-colors">Stack</a>
             <a href="#mindset" className="hover:text-white transition-colors">How I Build</a>
             <a href="#github" className="hover:text-white transition-colors">Contributions</a>
+            <a href="#resume" className="hover:text-white transition-colors font-medium text-blue-400">Resume</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
 

@@ -41,7 +41,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           <div>
             <h4 className="font-bold text-white font-display mb-2 text-base">Key Technical Highlights</h4>
             <ul className="space-y-2">
-              {project.architectureDetails.highlights.map((item, idx) => (
+              {project.architectureDetails.highlights.map((item: string, idx: number) => (
                 <li key={idx} className="flex items-start gap-2 text-zinc-300">
                   <CheckCircle2 className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
                   <span>{item}</span>

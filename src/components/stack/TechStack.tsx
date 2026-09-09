@@ -71,7 +71,7 @@ export const TechStack: React.FC = () => {
               <h3 className="font-display font-bold text-white text-base">{cat.title}</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {cat.items.map((item, i) => (
+              {cat.items.map((item: string, i: number) => (
                 <span
                   key={i}
                   className={`tech-label ${i === 0 ? 'tech-label-accent' : ''}`}

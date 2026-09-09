@@ -135,7 +135,7 @@ export const SelectedWork: React.FC = () => {
                 </p>
 
                 <div className="project-tech flex flex-wrap gap-2 pt-2">
-                  {project.technology.map((tech, i) => (
+                  {project.technology.map((tech: string, i: number) => (
                     <span key={i} className="tech-label">{tech}</span>
                   ))}
                 </div>

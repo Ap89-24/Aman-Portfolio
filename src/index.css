@@ -210,3 +210,82 @@ body {
   color: var(--text-secondary);
   overflow-x: auto;
 }
+
+/* Print Styles for Resume PDF Generation */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  header, footer, #bg-canvas, .bg-noise, #hero, #work, #about, #stack, #mindset, #github, #contact, .custom-cursor, .print\:hidden {
+    display: none !important;
+  }
+
+  #resume {
+    padding: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+  }
+
+  .resume-paper-container {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .resume-paper-container h1,
+  .resume-paper-container h3,
+  .resume-paper-container h4,
+  .resume-paper-container strong {
+    color: #000000 !important;
+  }
+
+  .resume-paper-container p,
+  .resume-paper-container li,
+  .resume-paper-container span {
+    color: #374151 !important;
+  }
+
+  .resume-paper-container .border-white\/10,
+  .resume-paper-container .border-white\/5 {
+    border-color: #e5e7eb !important;
+  }
+
+  .resume-paper-container .bg-zinc-900\/60 {
+    background-color: #f9fafb !important;
+    border-color: #e5e7eb !important;
+  }
+
+  .resume-paper-container .text-blue-400 {
+    color: #1d4ed8 !important;
+  }
+
+  .resume-paper-container .text-indigo-400 {
+    color: #4338ca !important;
+  }
+
+  .resume-paper-container .text-cyan-400 {
+    color: #0e7490 !important;
+  }
+
+  .resume-paper-container .text-emerald-400 {
+    color: #047857 !important;
+  }
+
+  .resume-paper-container .text-amber-400 {
+    color: #b45309 !important;
+  }
+
+  .resume-paper-container .text-rose-400 {
+    color: #be123c !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
+
