@@ -71,7 +71,7 @@ export const Contact: React.FC<ContactProps> = ({ onCopyEmail }) => {
             </a>
 
             <a
-              href="https://linkedin.com/in/amanpatel"
+              href="https://www.linkedin.com/in/aman-patel-7098b8282"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-xs"
