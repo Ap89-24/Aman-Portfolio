@@ -2,79 +2,67 @@ import { Project } from '../types';
 
 export const projectsData: Project[] = [
   {
-    id: 'arena',
+    id: 'expense-tracker',
     num: '01',
-    title: 'AI Battle Arena',
-    tagline: 'Where AI models compete, reason & win.',
-    description: 'A real-time multi-model AI platform where different LLMs compete to answer the same prompt. Responses are streamed live, evaluated by an AI judge, and scored to determine the winner.',
-    technology: ['LangChain', 'LangGraph', 'Mistral', 'Gemini', 'Cohere', 'WebSockets'],
-    categoryLabel: 'FEATURED AI SYSTEM',
+    title: 'Expense Tracker – Personal Finance Platform',
+    tagline: 'Premium Personal Finance & Budgeting Platform with AI Insights.',
+    description: 'A full-stack personal finance and budgeting platform featuring Generative AI financial insights, JWT auth, GSAP & Recharts dashboard, containerized with Docker and automated K3s deployment on AWS EC2.',
+    technology: ['React 19', 'Node.js', 'Express.js', 'MongoDB', 'Docker', 'Kubernetes (K3s)', 'GitHub Actions', 'Generative AI', 'AWS EC2'],
+    categoryLabel: 'FINTECH & DEVOPS PLATFORM',
     githubUrl: 'https://github.com/Ap89-24',
+    liveUrl: 'http://13.207.58.126/',
     architectureDetails: {
-      overview: 'Built on a distributed WebSocket streaming pipeline connecting multiple asynchronous LLM worker threads (Mistral, Gemini, Cohere) with an automated AI judge scoring loop.',
-      diagram: `[Client WebSockets] ➔ [API Gateway] ➔ [LangGraph Orchestrator]\n                                        ├── Worker 1 (Mistral 7B)\n                                        ├── Worker 2 (Gemini Pro)\n                                        └── Worker 3 (AI Judge Evaluator)`,
+      overview: 'Full-stack microservices-inspired application containerized with Docker and deployed via GitHub Actions CI/CD pipeline on automated K3s cluster on AWS EC2 with Traefik Ingress & HPA.',
+      diagram: `[React 19 Dashboard] ➔ [Traefik Ingress Controller] ➔ [Express REST API]\n                                                        ├── MongoDB Database\n                                                        └── GenAI Financial Insights Engine`,
       highlights: [
-        'Low-latency token streaming using Node.js event loops and WebSockets.',
-        'LangGraph state persistence across multi-turn model evaluations.',
-        'Custom rubric parsing for standardized AI judge confidence scoring.'
+        'Integrated Generative AI to generate personalized financial insights by analyzing month-over-month category variance & savings rates.',
+        'Developed secure REST APIs, JWT authentication, containerized with Docker and GitHub Actions CI/CD for automated K3s deployment on AWS EC2.',
+        'Designed interactive financial dashboard with real-time analytics using GSAP transitions, Recharts visualizations, and Traefik Ingress routing.',
+        'Configured Horizontal Pod Autoscalers (HPA) in Kubernetes to scale pods dynamically based on real-time CPU & Memory load.'
       ]
     }
   },
   {
-    id: 'deployguard',
+    id: 'arena',
     num: '02',
-    title: 'DeployGuard',
-    tagline: 'Real-time Kubernetes monitoring & deployment intelligence.',
-    description: 'A Kubernetes monitoring platform that watches cluster resources, detects deployment changes, processes infrastructure events, and streams updates in real time.',
-    technology: ['TypeScript', 'Node.js', 'Kubernetes', 'Docker', 'WebSockets', 'EventBus'],
-    categoryLabel: 'CLOUD & DEVOPS PLATFORM',
+    title: 'AI Battle Arena',
+    tagline: 'Where AI models compete, reason & win in real time.',
+    description: 'A full-stack AI Battle Arena comparing responses from multiple LLMs for user prompts in real time, featuring a LangGraph-based workflow orchestrating Mistral & Cohere models with Gemini as an AI Judge.',
+    technology: ['React.js', 'Tailwind CSS', 'GSAP', 'Framer Motion', 'Express.js', 'MongoDB', 'Clerk Auth', 'LangGraph', 'Gemini AI', 'Mistral', 'Cohere'],
+    categoryLabel: 'FEATURED AI SYSTEM',
     githubUrl: 'https://github.com/Ap89-24',
+    liveUrl: 'https://ai-battle-arena-pi.vercel.app',
     architectureDetails: {
-      overview: 'Real-time Kubernetes event consumer that leverages the K8s Client API, watching pod status changes, container crashes, and deployment rollouts across clusters.',
-      diagram: `[K8s API Watcher] ➔ [In-Memory EventBus] ➔ [WebSocket Broadcaster] ➔ [React Dashboard]`,
+      overview: 'LangGraph-based AI workflow orchestrating multi-model competition (Mistral & Cohere) with Gemini acting as an AI Judge for automated quality and reasoning evaluation.',
+      diagram: `[Client WebSockets] ➔ [Express API & Clerk Auth] ➔ [LangGraph Orchestrator]\n                                                        ├── Worker 1 (Mistral)\n                                                        ├── Worker 2 (Cohere)\n                                                        └── Worker 3 (Gemini AI Judge)`,
       highlights: [
-        'Sub-50ms event propagation from cluster node to web frontend.',
-        'Dockerized deployment agent with zero-privilege security context.',
-        'Automated webhook notifications for failed deployment rollouts.'
+        'LangGraph AI workflow orchestrating Mistral & Cohere models with Gemini as an AI Judge for automated winner evaluation.',
+        'Secure RESTful APIs with Express.js, MongoDB, and Clerk Authentication for chat session & battle history management.',
+        'AI evaluation pipeline scoring responses with detailed reasoning based on quality, clarity, and factual accuracy.',
+        'Responsive interactive frontend using React, Tailwind CSS, GSAP, and Framer Motion for real-time response rendering.'
       ]
     }
   },
   {
     id: 'perplexity',
     num: '03',
-    title: 'Perplexity Engine',
-    tagline: 'AI-powered conversational search & real-time answer synthesis.',
-    description: 'An AI-powered search engine inspired by Perplexity that combines live query intent parsing, web retrieval, LLM reasoning, and inline citation synthesis to deliver instant factual answers.',
-    technology: ['Next.js', 'TypeScript', 'LangChain', 'OpenAI', 'Vector Search', 'Web Retrieval'],
-    categoryLabel: 'AI SEARCH & SYNTHESIS',
+    title: 'Perplexity – AI Search Engine',
+    tagline: 'Conversational AI search engine with real-time web retrieval.',
+    description: 'An AI-powered search engine combining LLMs with real-time web search via Tavily AI, LangChain query-to-answer pipelines, prompt engineering, tool calling, and source-grounded citation synthesis.',
+    technology: ['React.js', 'Node.js', 'Express.js', 'LangChain', 'Tavily AI Search', 'LLMs', 'Prompt Engineering'],
+    categoryLabel: 'AI SEARCH & RESEARCH',
     githubUrl: 'https://github.com/Ap89-24/Perplexity',
+    liveUrl: 'https://perplexity-weld.vercel.app',
     architectureDetails: {
-      overview: 'Multi-stage AI search workflow combining natural language query expansion, parallel search API execution, chunk re-ranking, and streaming context synthesis with verified web source citations.',
-      diagram: `[User Query] ➔ [Query Expansion & Intent Classifier]\n                      ├── Web Search API (Tavily/Serp)\n                      ├── Vector DB Chunk Reranker\n                      └── [LLM Synthesizer with Citations [1][2]]`,
+      overview: 'Query-to-answer automated pipeline using LangChain tool calling and Tavily AI web retrieval for real-time contextual information discovery and citation-grounded response generation.',
+      diagram: `[User Query] ➔ [LangChain Query Pipeline]\n                ├── Tavily AI Search API (Web Retrieval)\n                ├── Context Injection & Tool Calling\n                └── LLM Response Generator (Source Citations)`,
       highlights: [
-        'Parallelized search retrieval with sub-800ms end-to-end synthesis latency.',
-        'Inline citation mapping binding LLM tokens directly to verified source URLs.',
-        'Stateful conversation thread context preservation using LangChain memory.'
-      ]
-    }
-  },
-  {
-    id: 'expense',
-    num: '04',
-    title: 'Expense Tracker',
-    tagline: 'Track money. Understand spending.',
-    description: 'A full-stack financial management application for managing income, expenses, categories, and transactions.',
-    technology: ['React', 'Node.js', 'Express', 'MongoDB', 'Docker'],
-    categoryLabel: 'FINTECH & ANALYTICS',
-    githubUrl: 'https://github.com/Ap89-24',
-    architectureDetails: {
-      overview: 'Microservices-inspired full-stack web application featuring secure JWT authentication, relational MongoDB transactions, and analytics aggregation pipelines.',
-      diagram: `[React App] ➔ [Express API Middleware] ➔ [MongoDB Aggregation Engine]`,
-      highlights: [
-        'Automated expense categorization using pattern matching algorithms.',
-        'Docker container composition for instant local staging deployment.',
-        'Responsive SVG financial charting with zero heavy library overhead.'
+        'LLM workflows using LangChain integrating prompt engineering, tool calling, web retrieval, and context injection.',
+        'Integrated Tavily AI Search as web-retrieval layer to perform real-time information discovery for LLM response generation.',
+        'Developed RESTful backend services with Node.js and Express.js for query processing and AI orchestration.',
+        'Built responsive React interface dynamically rendering AI answers with verifiable source information citations.'
       ]
     }
   }
 ];
+

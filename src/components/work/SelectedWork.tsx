@@ -89,6 +89,7 @@ export const SelectedWork: React.FC = () => {
       case 'perplexity':
         return <PerplexityWidget />;
       case 'expense':
+      case 'expense-tracker':
         return <ExpenseTrackerWidget />;
       default:
         return null;
